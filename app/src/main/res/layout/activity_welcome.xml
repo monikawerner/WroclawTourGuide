@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_light"
+    android:orientation="vertical"
+    tools:context="com.example.android.tourguideapplication.WelcomeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/panorama_wroclaw" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="@dimen/attraction_name_text_size" />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/start"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/plane"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingBottom="@dimen/padding"
+        android:src="@drawable/plane" />
+</LinearLayout>

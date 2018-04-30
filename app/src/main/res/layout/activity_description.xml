@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_light"
+    tools:context="com.example.android.tourguideapplication.DescriptionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/attraction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/attraction_height"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding"
+            android:paddingTop="@dimen/padding">
+
+            <ImageView
+                android:id="@+id/attraction_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:src="@drawable/market_square" />
+
+            <TextView
+                android:id="@+id/attraction_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/attraction_name_text_size"
+                android:textStyle="bold"
+                tools:text="Market Square" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/attraction_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/attraction"
+            android:paddingBottom="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
+            android:paddingTop="@dimen/padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/attraction_text_size"
+            android:textStyle="bold"
+            tools:text="Market Square" />
+
+        <TextView
+            android:id="@+id/attraction_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/attraction_contact"
+            android:paddingBottom="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/attraction_text_size"
+            tools:text="@string/market_square_description" />
+
+    </RelativeLayout>
+</ScrollView>
