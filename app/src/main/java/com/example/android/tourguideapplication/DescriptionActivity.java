@@ -24,13 +24,13 @@ public class DescriptionActivity extends AppCompatActivity {
         attractionContactDescription = getIntent().getStringExtra("CLICKED_ITEM_CONTACT");
         attractionDescriptionDescription = getIntent().getStringExtra("CLICKED_ITEM_DESCRIPTION");
 
-        TextView attractionName = (TextView) findViewById(R.id.attraction_name);
+        TextView attractionName = findViewById(R.id.attraction_name);
         attractionName.setText(attractionNameDescription);
-        ImageView attractionImage = (ImageView) findViewById(R.id.attraction_image);
+        ImageView attractionImage = findViewById(R.id.attraction_image);
         attractionImage.setImageResource(attractionImageDescription);
-        TextView attractionContact = (TextView) findViewById(R.id.attraction_contact);
+        TextView attractionContact = findViewById(R.id.attraction_contact);
         attractionContact.setText(attractionContactDescription);
-        TextView attractionDescription = (TextView) findViewById(R.id.attraction_description);
+        TextView attractionDescription = findViewById(R.id.attraction_description);
         attractionDescription.setText(attractionDescriptionDescription);
 
     }

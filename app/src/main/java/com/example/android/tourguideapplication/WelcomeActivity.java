@@ -15,7 +15,7 @@ public class WelcomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_welcome);
 
         /** Set OnClickListener on the TextView to start another activity */
-        TextView start = (TextView) findViewById(R.id.start);
+        TextView start = findViewById(R.id.start);
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,7 +25,7 @@ public class WelcomeActivity extends AppCompatActivity {
         });
 
         /** Set OnClickListener on the ImageView to start another activity */
-        ImageView plane = (ImageView) findViewById(R.id.plane);
+        ImageView plane = findViewById(R.id.plane);
         plane.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

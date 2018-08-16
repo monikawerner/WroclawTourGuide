@@ -41,22 +41,22 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
         Attraction currentWord = getItem(position);
 
         /** Find the TextView in the list_item.xml layout with the ID name_text_view */
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_text_view);
+        TextView nameTextView = listItemView.findViewById(R.id.name_text_view);
         /** Get the name from the current Attraction object and set this text on the name TextView */
         nameTextView.setText(currentWord.getAttractionName());
 
         /** Find the ImageView in the list_item.xml layout with the ID image */
-        ImageView image = (ImageView) listItemView.findViewById(R.id.image);
+        ImageView image = listItemView.findViewById(R.id.image);
         /** Get the image resource Id from the current Attraction object and set this image resource on the image ImageView */
         image.setImageResource(currentWord.getImageResourceId());
 
         /** Find the TextView in the list_item.xml layout with the ID contact_text_view */
-        TextView contactTextView = (TextView) listItemView.findViewById(R.id.contact_text_view);
+        TextView contactTextView = listItemView.findViewById(R.id.contact_text_view);
         /** Get the contact information from the current Attraction object and set this text on the contact TextView */
         contactTextView.setText(currentWord.getAttractionContact());
 
         /** Find the TextView in the list_item.xml layout with the ID description_text_view */
-        TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.description_text_view);
+        TextView descriptionTextView = listItemView.findViewById(R.id.description_text_view);
         /** Get the description from the current Attraction object and set this text on the description TextView */
         descriptionTextView.setText(currentWord.getAttractionDescription());
 

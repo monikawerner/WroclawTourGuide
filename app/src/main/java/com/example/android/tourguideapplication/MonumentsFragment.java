@@ -43,7 +43,7 @@ public class MonumentsFragment extends Fragment {
         /** Create an AttractionAdapter, whose data source is a list of Attractions */
         AttractionAdapter adapter = new AttractionAdapter(getActivity(), attractions);
         /** Find the ListView object in the view hierarchy of the Activity */
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
         /** Set the adapter on the ListView */
         listView.setAdapter(adapter);
 
